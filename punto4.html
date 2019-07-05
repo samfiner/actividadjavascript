@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     
+        <script>
+                let contadorP=0, O=0;
+                let contadorN =1;
+                for(O=1; O<=10;O++){
+                    let num = parseInt(window.prompt("ingrese un número"));
+                    (num>0)? contadorP+=num:contadorN*=num;
+                }
+                document.write(mostrar(contadorP, contadorN));
+        
+                function mostrar(para1, para2){
+                    return "<p>La suma de los numeros positivos es: "+para1+"</p><p>La multiplicación de los numeros negativos es: "+para2+"</p>"
+                }
+            </script>
+    
+</body>
+</html>

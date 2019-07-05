@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+              
+                let nombre;
+                let sexo, sueldo, cont=0, cont2 =0;
+                for(  let g=0; g<10; g++){
+                    nombre = window.prompt("ingrese  el nombre del empleado(a):");
+                    sexo=parseInt(window.prompt("ingrese el tipo de sexo del empleado (1 = femenino, 2= masculino)"));
+                    if(sexo === 1){
+                        sueldo = parseFloat(window.prompt("Digite el sueldo del empleado:"));
+                        if(sueldo>500){
+                            cont++;
+                        }
+                    }else if(sexo === 2){
+                        sueldo = parseFloat(window.prompt("Digite el sueldo del empleado:"));
+                        if (sueldo < 400){
+                            cont2++;
+                        }
+                    }else {
+                        alert("Opción no válida");
+                        g+=-1;
+                    }
+                }
+                document.write(`<p> Deacuerdo a  los  ingresados en el sistema Usted tiene a ${cont}empleados con  sexo femenino con sueldo mayor a $500 </p><p> Deacuerdo a  los  ingresados en el sistema Usted tiene a ${cont2} empledos con sexo masculino con sueldo menor a $400 </p>`);
+            </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+                let cont=0,cont2=0, vector = new Array(10);
+                for( let p=0; p<vector.length; p++){
+                    vector[p] = parseInt(window.prompt("Digite un número para el vector en la posición "+(p+1)));
+                }
+              
+                let numero = parseInt(window.prompt("Digite otro número:"));
+                let numero2 = parseInt(window.prompt("Digite otro número:"));
+                for(  p=0; p<vector.length; p++){
+                    if(vector[p]===numero){
+                        cont++;
+                    }else if(vector[p]===numero2){
+                        cont2++;
+                    }
+                }
+                if(cont!=0 && cont2!=0){
+                    document.write("Los números ingresados ya se encuentran en el vector");
+                } else if(cont!=0){
+                    document.write("El primer número ya está  en el vector");
+                } else if(cont!=0){
+                    document.write("El segundo número ya está en el vector");
+                } else{
+                    document.write("Ninguno de los números está en el vector");
+                }
+                
+            </script>
+</body>
+</html>

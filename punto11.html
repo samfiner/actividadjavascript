@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+                let num = parseInt(window.prompt("Digite un número para determinar el tamaño del vector"));
+                let  cont=0, cont2=0, vector = new Array(num);
+            
+                for (p=0; p<vector.length; p++){
+                    num = parseInt(window.prompt("Digite un número:"));
+                    if(num%2===0){
+                        cont++;
+                    }else {
+                        cont2++;
+                    }
+                }
+            
+                document.write(`<p> Usted ingreso ${cont} números pares </p><p> Usted ingresó ${cont2} números impares</p>`)
+                </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            
+                let opcion = parseInt(window.prompt(menu()));
+                switch (opcion) {
+                    case 1:
+                        window.prompt("El área de su círculo es: "+aCirculo());
+                        break;
+                    case 2:
+                        window.prompt("El área de su rectángulo es: "+bRectangulo());
+                        break;
+                    case 3:
+                        window.prompt("El área de su triángulo es: "+cTriangulo());
+                        break;
+                    default:
+                        break;
+                }
+        
+                function menu(){
+                    let index=`
+                    Menu
+                    elejir 1 para el área del círculo.
+                    elejir 2 para el área del rectángulo.
+                    elejir 3 para el área del triángulo.
+                    Digite su opción:
+                    `
+                    return index;
+                }
+        
+                function aCirculo(){
+                    let radio = parseFloat(window.prompt("Digite el radio del círculo:"));
+        
+                    let a = Math.PI * Math.pow(radio, 2);
+                    return a;
+                }
+        
+                function bRectangulo() {
+                    let base = parseFloat(window.prompt("Digite la base de su rectángulo:"));
+                    let height = parseFloat(window.prompt("Digite la altura de su rectángulo:"));
+        
+                    let b= base * height;
+                    return b;
+                }
+                function cTriangulo() {
+                    let base = parseFloat(window.prompt("Digite la base de su triángulo:"));
+                    let height = parseFloat(window.prompt("Digite la altura de su triángulo:"));
+        
+                    let c= (base * height)/2;
+                    return c;
+                }
+            </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+                let opcion = true;
+                let cont =0;
+                let cont2 =0;
+                let peso;
+        
+                while (opcion) {
+                    peso = parseInt(window.prompt("ingrese su peso (digite 0 para salir y mostrar resultado): "));
+                    if(peso>80){
+                        cont++;
+                    }else if(peso<80 && peso>0){
+                        cont2++;
+                    }else if (peso == 0){
+                        opcion=false;
+                    }
+                }
+                document.write("<p>Usted ingreso lo siguiente a un total de: "+cont+" pesos mayores a 80Kg</p>");
+                document.write("<p>Usted  ingreso lo siguiente a un total de: "+cont2+" pesos menores a 80Kg</p>");
+            </script>
+</body>
+</html>

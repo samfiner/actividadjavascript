@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+                function cuadrados(para1){
+                    return Math.pow(para1,2);
+                }
+                function cubos(para1) {
+                    return Math.pow(para1,3);
+                }
+                
+                document.write("Los cuadrados correspondientes a  los primeros 10 números son: ");
+                for(let p=1; p<=10;p++){
+                    document.write("<p>"+cuadrados(p)+"</p>");
+                }
+            
+                document.write("Los cubos correspondientes a los primeros 10 números son: ");
+                for(p=1; p<=10;p++){
+                    document.write("<p>"+cubos(p)+"</p>");
+                }
+            </script>
+
+</body>
+</html>

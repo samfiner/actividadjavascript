@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let p=0, num=0, cont =0, cont2=0;
+    while (num<999) {
+        num = parseInt(window.prompt("Digite un número :"));
+        if (num===0){
+            console.log();
+        }else if (num < 999){
+            (num>0)? cont++:cont2++;
+        }
+    }
+    document.write(`<p>Usted ingresó ${cont} números positivos.</p><p>Usted ingresó ${cont2} números negativos.</p>`);
+</script>
+</body>
+</html>
